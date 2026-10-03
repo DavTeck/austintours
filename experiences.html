@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences & Tours | Austins Tour & Travel</title>
+  <meta name="description" content="Unique luxury experiences: private yachts, cultural immersions, adventure treks, and wellness retreats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ocean: { 50:'#f0f7fc',100:'#d9ebf7',200:'#b3d7ef',300:'#7cb9e0',400:'#3d94c9',500:'#0B3C5D',600:'#0A2E4D',700:'#08253e',800:'#061c2f',900:'#041422' },
+            sand: { 50:'#fdfaf6',100:'#f9f1e6',200:'#f5e6d3',300:'#e8d5b7',400:'#d4b896',500:'#c19a6b' },
+            coral: { 400:'#e89b85',500:'#E07A5F',600:'#c96a52' }
+          },
+          fontFamily: { serif: ['Playfair Display','Georgia','serif'], sans: ['Inter','system-ui','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>.nav-glass{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}</style>
+</head>
+<body class="font-sans bg-white dark:bg-ocean-900 text-ocean-800 dark:text-sand-100 transition-colors duration-300">
+
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-ocean-800/90 nav-glass shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="images/logo.png" alt="Austins Tour & Travel" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform">
+        </a>
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-white/90 hover:text-white font-medium text-sm">Home</a>
+          <a href="destinations.html" class="text-white/90 hover:text-white font-medium text-sm">Destinations</a>
+          <a href="experiences.html" class="text-white font-medium text-sm">Experiences</a>
+          <a href="about.html" class="text-white/90 hover:text-white font-medium text-sm">About</a>
+          <a href="blog.html" class="text-white/90 hover:text-white font-medium text-sm">Journal</a>
+          <a href="contact.html" class="text-white/90 hover:text-white font-medium text-sm">Contact</a>
+        </div>
+        <div class="flex items-center space-x-3">
+          <button id="themeToggle" class="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+            <svg id="sunIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg id="moonIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="contact.html" class="hidden md:inline-flex px-5 py-2.5 bg-coral-500 hover:bg-coral-600 text-white text-sm font-semibold rounded-full">Book Now</a>
+          <button id="mobileMenuBtn" class="lg:hidden p-2 text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden bg-ocean-800/95 nav-glass border-t border-white/10">
+      <div class="px-4 py-6 space-y-4">
+        <a href="index.html" class="block text-white font-medium py-2">Home</a>
+        <a href="destinations.html" class="block text-white font-medium py-2">Destinations</a>
+        <a href="experiences.html" class="block text-white font-medium py-2">Experiences</a>
+        <a href="about.html" class="block text-white font-medium py-2">About</a>
+        <a href="blog.html" class="block text-white font-medium py-2">Journal</a>
+        <a href="contact.html" class="block text-white font-medium py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-16 bg-ocean-600 dark:bg-ocean-800 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="text-coral-400 font-medium tracking-widest uppercase text-sm mb-3">Unforgettable Moments</p>
+      <h1 class="font-serif text-4xl md:text-6xl font-semibold text-white mb-4">Experiences & Tours</h1>
+      <p class="text-sand-200 text-lg max-w-2xl mx-auto">Boat cruises, game drives, gorilla trekking and authentic East African adventures.</p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-sand-50 dark:bg-ocean-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Private Yacht -->
+        <div class="group relative rounded-2xl overflow-hidden h-[420px]">
+          <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Private Yacht" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-ocean-900/95 via-ocean-900/50 to-transparent"></div>
+          <div class="absolute bottom-0 p-8">
+            <span class="inline-block px-3 py-1 bg-coral-500 text-white text-xs font-semibold rounded-full mb-3">Signature</span>
+            <h3 class="font-serif text-3xl font-semibold text-white mb-2">Private Yacht Charters</h3>
+            <p class="text-sand-200 mb-4 text-sm leading-relaxed">Sail the Mediterranean, Caribbean, or Indonesian archipelago aboard a fully crewed luxury yacht. Custom itineraries, gourmet dining, and exclusive anchorages.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-white font-semibold text-lg">From $8,500 / day</span>
+              <a href="contact.html" class="px-5 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur text-white rounded-full text-sm font-medium transition-colors">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cultural Immersion -->
+        <div class="group relative rounded-2xl overflow-hidden h-[420px]">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cultural Immersion" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-ocean-900/95 via-ocean-900/50 to-transparent"></div>
+          <div class="absolute bottom-0 p-8">
+            <span class="inline-block px-3 py-1 bg-coral-500 text-white text-xs font-semibold rounded-full mb-3">Authentic</span>
+            <h3 class="font-serif text-3xl font-semibold text-white mb-2">Cultural Immersions</h3>
+            <p class="text-sand-200 mb-4 text-sm leading-relaxed">Private temple ceremonies, home-cooked meals with local families, artisan workshops, and after-hours museum access guided by experts.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-white font-semibold text-lg">From $1,200 / day</span>
+              <a href="contact.html" class="px-5 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur text-white rounded-full text-sm font-medium transition-colors">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adventure Treks -->
+        <div class="group relative rounded-2xl overflow-hidden h-[420px]">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Adventure Treks" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-ocean-900/95 via-ocean-900/50 to-transparent"></div>
+          <div class="absolute bottom-0 p-8">
+            <span class="inline-block px-3 py-1 bg-coral-500 text-white text-xs font-semibold rounded-full mb-3">Active</span>
+            <h3 class="font-serif text-3xl font-semibold text-white mb-2">Adventure Treks</h3>
+            <p class="text-sand-200 mb-4 text-sm leading-relaxed">Guided hikes in Patagonia, Kilimanjaro summits, or Himalayan trails with premium base camps, expert porters, and safety-first logistics.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-white font-semibold text-lg">From $3,200</span>
+              <a href="contact.html" class="px-5 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur text-white rounded-full text-sm font-medium transition-colors">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wellness Retreats -->
+        <div class="group relative rounded-2xl overflow-hidden h-[420px]">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Wellness Retreat" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-ocean-900/95 via-ocean-900/50 to-transparent"></div>
+          <div class="absolute bottom-0 p-8">
+            <span class="inline-block px-3 py-1 bg-coral-500 text-white text-xs font-semibold rounded-full mb-3">Restore</span>
+            <h3 class="font-serif text-3xl font-semibold text-white mb-2">Wellness Retreats</h3>
+            <p class="text-sand-200 mb-4 text-sm leading-relaxed">Yoga, Ayurveda, spa rituals, and digital detox in Bali, the Maldives, or the Swiss Alps. Holistic programs designed by world-class practitioners.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-white font-semibold text-lg">From $2,400</span>
+              <a href="contact.html" class="px-5 py-2.5 bg-white/20 hover:bg-white/30 backdrop-blur text-white rounded-full text-sm font-medium transition-colors">Inquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white dark:bg-ocean-800 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold text-ocean-700 dark:text-white mb-4">Ready to create your experience?</h2>
+      <p class="text-ocean-600 dark:text-sand-200 mb-8">Every journey is tailored. Tell us what moves you and we'll design the rest.</p>
+      <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-coral-500 hover:bg-coral-600 text-white font-semibold rounded-full transition-colors">Start Planning</a>
+    </div>
+  </section>
+
+  <footer class="bg-ocean-900 text-sand-200 py-12 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-center space-x-2 mb-4">
+        <img src="images/logo.png" alt="Austins Tour & Travel" class="h-12 w-auto object-contain mx-auto mb-2"><p class="text-sm">&copy; 2026 Austins Tour & Travel.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/256750087709" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html>

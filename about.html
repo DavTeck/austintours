@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Austins Tour & Travel</title>
+  <meta name="description" content="Our story, values of sustainability and authentic experiences, and the team behind Austins Tour & Travel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ocean: { 50:'#f0f7fc',100:'#d9ebf7',200:'#b3d7ef',300:'#7cb9e0',400:'#3d94c9',500:'#0B3C5D',600:'#0A2E4D',700:'#08253e',800:'#061c2f',900:'#041422' },
+            sand: { 50:'#fdfaf6',100:'#f9f1e6',200:'#f5e6d3',300:'#e8d5b7',400:'#d4b896',500:'#c19a6b' },
+            coral: { 400:'#e89b85',500:'#E07A5F',600:'#c96a52' }
+          },
+          fontFamily: { serif: ['Playfair Display','Georgia','serif'], sans: ['Inter','system-ui','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>.nav-glass{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}</style>
+</head>
+<body class="font-sans bg-white dark:bg-ocean-900 text-ocean-800 dark:text-sand-100 transition-colors duration-300">
+
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-ocean-800/90 nav-glass shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="images/logo.png" alt="Austins Tour & Travel" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform">
+        </a>
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-white/90 hover:text-white font-medium text-sm">Home</a>
+          <a href="destinations.html" class="text-white/90 hover:text-white font-medium text-sm">Destinations</a>
+          <a href="experiences.html" class="text-white/90 hover:text-white font-medium text-sm">Experiences</a>
+          <a href="about.html" class="text-white font-medium text-sm">About</a>
+          <a href="blog.html" class="text-white/90 hover:text-white font-medium text-sm">Journal</a>
+          <a href="contact.html" class="text-white/90 hover:text-white font-medium text-sm">Contact</a>
+        </div>
+        <div class="flex items-center space-x-3">
+          <button id="themeToggle" class="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+            <svg id="sunIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg id="moonIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="contact.html" class="hidden md:inline-flex px-5 py-2.5 bg-coral-500 hover:bg-coral-600 text-white text-sm font-semibold rounded-full">Book Now</a>
+          <button id="mobileMenuBtn" class="lg:hidden p-2 text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden bg-ocean-800/95 nav-glass border-t border-white/10">
+      <div class="px-4 py-6 space-y-4">
+        <a href="index.html" class="block text-white font-medium py-2">Home</a>
+        <a href="destinations.html" class="block text-white font-medium py-2">Destinations</a>
+        <a href="experiences.html" class="block text-white font-medium py-2">Experiences</a>
+        <a href="about.html" class="block text-white font-medium py-2">About</a>
+        <a href="blog.html" class="block text-white font-medium py-2">Journal</a>
+        <a href="contact.html" class="block text-white font-medium py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-16 bg-ocean-600 dark:bg-ocean-800 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="text-coral-400 font-medium tracking-widest uppercase text-sm mb-3">Our Story</p>
+      <h1 class="font-serif text-4xl md:text-6xl font-semibold text-white mb-4">About Austins Tour & Travel</h1>
+      <p class="text-sand-200 text-lg max-w-2xl mx-auto">Crafting extraordinary journeys with heart, expertise, and a deep respect for the places we visit.</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="py-20 bg-white dark:bg-ocean-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-ocean-700 dark:text-white mb-6">Born from a love of discovery</h2>
+          <p class="text-ocean-600 dark:text-sand-200 mb-4 leading-relaxed">Founded in Uganda, Austins Tour & Travel is a passionate team of local experts dedicated to creating thrilling East African safari memories that last a lifetime.</p>
+          <p class="text-ocean-600 dark:text-sand-200 mb-4 leading-relaxed">Today we specialize in Uganda’s national parks and the wider East African region, partnering with trusted lodges, local guides, and conservation projects.</p>
+          <p class="text-ocean-600 dark:text-sand-200 leading-relaxed">Every itinerary is built around you — your pace, your interests, your sense of wonder.</p>
+        </div>
+        <div class="relative">
+          <img src="images/amimals.jpeg" alt="Travel team" class="rounded-2xl shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20 bg-sand-50 dark:bg-ocean-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-ocean-700 dark:text-white mb-4">Our Values</h2>
+        <p class="text-ocean-600 dark:text-sand-200 max-w-2xl mx-auto">These principles guide every decision we make.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white dark:bg-ocean-700 p-8 rounded-2xl shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-ocean-100 dark:bg-ocean-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-ocean-500 dark:text-coral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-ocean-700 dark:text-white mb-3">Sustainability First</h3>
+          <p class="text-ocean-600 dark:text-sand-200 text-sm leading-relaxed">We prioritize low-impact travel, carbon-conscious itineraries, and partners who actively protect the environments and communities we visit. A portion of every booking supports local conservation.</p>
+        </div>
+        <div class="bg-white dark:bg-ocean-700 p-8 rounded-2xl shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-ocean-100 dark:bg-ocean-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-ocean-500 dark:text-coral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold text-ocean-700 dark:text-white mb-3">Authentic Experiences</h3>
+          <p class="text-ocean-600 dark:text-sand-200 text-sm leading-relaxed">We believe the most memorable moments happen when you connect with people and place. We open doors to genuine cultural exchanges, not staged performances.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team
+  <section class="py-20 bg-white dark:bg-ocean-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-ocean-700 dark:text-white mb-4">Meet the Team</h2>
+        <p class="text-ocean-600 dark:text-sand-200">Passionate travelers and meticulous planners.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Founder" class="w-40 h-40 rounded-full object-cover mx-auto mb-5 shadow-lg">
+          <h3 class="font-serif text-xl font-semibold text-ocean-700 dark:text-white">Marcus Austin</h3>
+          <p class="text-coral-500 text-sm font-medium mb-2">Founder & CEO</p>
+          <p class="text-ocean-600 dark:text-sand-200 text-sm">Former expedition leader with 15 years designing journeys across Africa and Asia.</p>
+        </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Creative Director" class="w-40 h-40 rounded-full object-cover mx-auto mb-5 shadow-lg">
+          <h3 class="font-serif text-xl font-semibold text-ocean-700 dark:text-white">Sofia Reyes</h3>
+          <p class="text-coral-500 text-sm font-medium mb-2">Creative Director</p>
+          <p class="text-ocean-600 dark:text-sand-200 text-sm">Specializes in cultural immersion itineraries and partnerships with local artisans.</p>
+        </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Operations" class="w-40 h-40 rounded-full object-cover mx-auto mb-5 shadow-lg">
+          <h3 class="font-serif text-xl font-semibold text-ocean-700 dark:text-white">James Okonkwo</h3>
+          <p class="text-coral-500 text-sm font-medium mb-2">Head of Operations</p>
+          <p class="text-ocean-600 dark:text-sand-200 text-sm">Ensures every logistical detail is flawless — from transfers to emergency support.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="bg-ocean-900 text-sand-200 py-12 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-center space-x-2 mb-4">
+        <img src="images/logo.png" alt="Austins Tour & Travel" class="h-12 w-auto object-contain mx-auto mb-2"><p class="text-sm">&copy; 2026 Austins Tour & Travel.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/256750087709" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html>
